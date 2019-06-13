@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "119719118638",
+    "firebase_url": "https://carryt-users-3579b.firebaseio.com",
+    "project_id": "carryt-users-3579b",
+    "storage_bucket": "carryt-users-3579b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119719118638:android:aab26d7494394850",
+        "android_client_info": {
+          "package_name": "eu.carryT.rider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119719118638-5bqbuntl92usv5ttb6hojgq8bgvrn4c6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eu.carryT.rider",
+            "certificate_hash": "25dcd7ebcb9e666c622fddacc088f5f7f3ad0944"
+          }
+        },
+        {
+          "client_id": "119719118638-14cub26brbksi3uak4panbtenf0sb6oe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzjdCn49sGkR1yHMCoorsmEyqtrDVR3bs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119719118638-14cub26brbksi3uak4panbtenf0sb6oe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

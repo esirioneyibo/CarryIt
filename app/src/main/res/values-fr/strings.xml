@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY appName "Carry\'T Rider">
+    <!ENTITY Provider "Driver">
+    <!ENTITY provider "driver">
+    <!ENTITY Service "Ride">
+    <!ENTITY service "ride">]>
+<resources>
+
+    <string name="app_name">&appName;</string>
+    <!--Google map-->
+    <!--<string name="google_map_api">AIzaSyDSNO6kfM3L3o2x0fkM-6jTXjI2iFKOfAY</string>-->
+    <string name="google_map_api">AIzaSyD0L8WU-A7WYNjXefNbhV8OcSahd2P4Vho</string>
+    <string name="ClanPro_Book">fonts/ClanPro-Book.otf</string>
+    <string name="ClanPro_Medium">fonts/ClanPro-Medium.otf</string>
+    <string name="ClanPro_NarrBook">fonts/ClanPro-NarrBook.otf</string>
+    <string name="ClanPro_NarrMedium">fonts/ClanPro-NarrMedium.otf</string>
+    <string name="ClanPro_NarrNews">fonts/ClanPro-NarrNews.otf</string>
+    <string name="ClanPro_News">fonts/ClanPro-News.otf</string>
+    <string name="ClanPro_WideMedium">fonts/ClanPro-WideMedium.otf</string>
+    <string name="ClanPro_WideNews">fonts/ClanPro-WideNews.otf</string>
+    <string name="bariol">fonts/bariol_regular-webfont.ttf</string>
+
+    <!--Facebook App Id Account Kit -->
+    <string name="facebook_app_id">668083590290820</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">0ed48e7922e64f7d16ab5d6e3aa7d7ac</string>
+
+    <!--Navigation Drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Nav items-->
+    <string name="action_payment">Paiement</string>
+    <string name="action_trips">Vos courses</string>
+    <string name="action_coupon">Coupon</string>
+    <string name="action_wallet">Portefeuille</string>
+    <string name="action_help">Aidez-moi</string>
+    <string name="action_share">Partager</string>
+    <string name="action_about">Sur</string>
+    <string name="action_logout">Déconnexion</string>
+
+    <!--Activity Begin-->
+    <string name="get_moving_with_tranxit">Saisissez votre adresse e-mail pour vous connecter</string>
+    <string name="enter_your_mail_id">Saisissez votre adresse de messagerie ici</string>
+    <string name="or_connect_with_social_media">Ou connectez-vous avec facebook</string>
+
+    <!--Activity Email -->
+    <string name="whats_your_mail_address">Quelle est votre adresse email?</string>
+    <string name="sample_mail_id">name@examplecom</string>
+
+    <!--Activity Password -->
+    <string name="welcome_back">Bienvenue, connectez-vous pour continuer </string>
+    <string name="enter_your_password">Saisissez votre mot de passe</string>
+    <string name="i_forgot_my_password">Mot de passe oublié ?</string>
+    <string name="i_need_to_create_an_account">Créer un nouveau compte ?</string>
+
+
+    <!--Activity Register-->
+    <string name="email">Email</string>
+    <string name="name">Prénom</string>
+    <string name="phone_number">Numéro de téléphone</string>
+    <string name="password">Mot de passe</string>
+    <string name="first_name">Prénom</string>
+    <string name="last_name">Nom</string>
+    <string name="mobile_no">9876543210</string>
+    <string name="password_txt">******</string>
+
+    <!-- Activity ForgetPassword -->
+    <string name="recover_password">Saisissez votre identifiant mail pour la récupération</string>
+
+    <!-- Coupon Fragment-->
+    <string name="enter_the_coupon">Saisissez le code Portefeuille</string>
+    <string name="add_coupon">Ajouter un code portefeuille</string>
+
+    <!-- Edit Activity-->
+    <string name="edit_profile">Modifier le compte</string>
+    <string name="change_password">Voulez vous changer le mot de passe?</string>
+    <string name="save">Enregistrer</string>
+    <string name="update_success">Profil mis à jour</string>
+
+
+    <!-- Home Fragment-->
+    <string name="where_to_go">Où allez-vous?</string>
+    <string name="selected_option">Économie</string>
+    <string name="selected_payment_mode">En espèces</string>
+    <string name="change">Changement</string>
+    <string name="request_xuber">Demande une &Service;</string>
+
+
+    <!--Schedule Layout -->
+    <string name="schedule">Programmer une &Service;</string>
+    <string name="change_date">Changement</string>
+    <string name="sample_date">Choisissez une date</string>
+    <string name="sample_time">Choisissez une heure</string>
+    <string name="next">Demande de calendrier</string>
+    <string name="different_time">Vous ne pouvez pas planifier dans les temps passés, s\'il vous plaît choisir un autre moment</string>
+    <string name="choose_date_time">Veuillez choisir la date et l\'heure</string>
+
+    <!--Service List Item -->
+    <string name="service_list_item">Jaguar</string>
+    <string name="no_service">Aucun service trouvé</string>
+    <string name="no_route">Il n\'y a pas de route, choisissez une autre destination</string>
+    <string name="choose_payment">Choisissez le mode de paiement</string>
+
+    <!--Approximate -->
+    <string name="approximate">Tarif estimé</string>
+    <string name="eta_time">ETA</string>
+    <string name="sample_rate">DZD1234</string>
+    <string name="include_all">Y compris toutes les autres charges</string>
+
+    <!-- Confirm your pickup -->
+    <string name="confirm_your_pickup">Confirmez votre récupération</string>
+    <string name="confirm">Confirmer la récupération</string>
+    <string name="sample_address">12, Place Maurice Audin, Alger centre, Alger</string>
+    <string name="done">Terminé</string>
+
+    <!-- Waiting for provider -->
+    <string name="looking_for_ride">Découverte &provider;</string>
+    <string name="cancel_ride">Annuler &service;</string>
+    <string name="share">Partager</string>
+    <string name="cancel_ride_alert">Êtes-vous sûr de vouloir annuler le &service;?</string>
+    <string name="no_providers_found">Aucun chauffeur disponible pour le moment, Veuillez réessayez plus tard</string>
+    <string name="no_drivers_found">Aucun chauffeur disponible</string>
+    <string name="driver_busy">Votre course a été annulée par le chauffeur.Veuillez nous contacter pour le support</string>
+    <string name="retry">Réessayer maintenant</string>
+    <string name="try_later">Plus tard</string>
+
+
+    <!--Driver Accepted-->
+    <string name="sample_name">Mohamed Ali</string>
+    <string name="sample_service">Audi</string>
+    <string name="call_btn">Appel</string>
+    <string name="cancel_trip">Annuler la course</string>
+    <string name="surge_pricing">En raison des heures de pointe, les frais varient en fonction de la disponibilité des chauffeurs</string>
+
+
+    <!--Payment Fragment-->
+    <string name="payment">Paiement</string>
+    <string name="payment_methods">méthodes de paiement</string>
+    <string name="add_payments">Ajouter une carte pour les paiements</string>
+    <string name="card_details">Détails de la carte</string>
+    <string name="card_number">Numéro de carte de crédit / débit</string>
+    <string name="sample_card_no">XXXX - XXXX - XXXX - XXXX</string>
+    <string name="month_and_year">MM/YY</string>
+    <string name="cvv">CVV</string>
+    <string name="add">Ajouter une carte</string>
+    <string name="enter_card_details">Détails de la carte non valides</string>
+    <string name="are_you_sure">Voulez-vous vraiment supprimer?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+
+
+    <!--Status -->
+    <string name="arrived">&Provider; est arrivé à votre emplacement</string>
+    <string name="picked_up">Vous êtes en &service;</string>
+    <string name="dropped">&Service; terminée</string>
+
+    <!--Your Trips-->
+    <string name="history">Historique</string>
+    <string name="comments">commentaires</string>
+    <string name="no_trips">Vous n\'avez aucune course </string>
+    <string name="your_trips">Vos courses</string>
+    <string name="upcoming">Prochain</string>
+    <string name="past">Passé</string>
+
+
+    <!--Invoice -->
+    <string name="invoice">Facture d\'achat</string>
+    <string name="base_price">Tarif de base</string>
+    <string name="booking_id">ID de réservation</string>
+    <string name="sample_base_price">DZD10000</string>
+    <string name="extra_price">Supplémentaire</string>
+    <string name="tax">Tax</string>
+    <string name="total">Total</string>
+    <string name="pay_now">Payez maintenant</string>
+    <string name="distance_price">Tarif de distance</string>
+
+
+    <!--Rate provider-->
+    <string name="rate_provider">Evaluez votre course avec</string>
+    <string name="write_your_comment">Écrivez votre commentaire</string>
+    <string name="submit">Soumettre</string>
+
+
+    <!-- Source and destination-->
+    <string name="source_location">Votre emplacement</string>
+    <string name="destination_location">Où allez-vous?</string>
+
+    <!--Show Dailog-->
+    <string name="connect_to_network">Connectez-vous au réseau ou quittez</string>
+    <string name="cencel_request">Etes-vous sûr de vouloir annuler le course;?</string>
+    <string name="connect_to_wifi">Connectez-vous au WIFI</string>
+    <string name="quit">Quitter</string>
+
+
+    <!-- Error Messages-->
+    <string name="something_went_wrong">Une erreur s’est produite </string>
+    <string name="something_went_wrong_net">Erreur, Veuillez verifier votre connexion</string>
+    <string name="oops_connect_your_internet">Oops ! Connectez-vous à internet</string>
+    <string name="server_down">Server injoingnable</string>
+    <string name="please_try_again">Veuillez réessayer</string>
+    <string name="email_validation">Saisissez votre identifiant email</string>
+    <string name="not_valid_email">Aucun identifiant email valide</string>
+    <string name="password_validation">Le mot de passe est obligatoire</string>
+    <string name="first_name_empty">Prénom obligatoire</string>
+    <string name="last_name_empty">Nom Obligatoire</string>
+    <string name="mobile_number_empty">Numéro de portable requis</string>
+    <string name="mobile_number_validation">Le numéro de mobile doit comporter des chiffres compris entre 10 et 20 chiffres</string>
+
+    <!--True or False -->
+    <string name="True">Vrai</string>
+    <string name="False">Faux</string>
+
+
+    <!--Coupon Activity-->
+    <string name="not_vaild_coupon">Le Code n\'est pas valide ou a expiré</string>
+    <string name="coupon_added">Code appliqué avec succès</string>
+    <string name="add_coupon_txt">Ajouter un code</string>
+    <string name="added_coupon">Codes appliqués</string>
+    <string name="already_in_use_coupon">Code déjà utilisé</string>
+    <string name="expired_coupon">Désolé, le code portefeuille a expiré</string>
+    <string name="off">OFF</string>
+    <string name="the_applied_coupon">Le code Portefeuille appliqué est</string>
+    <string name="valid_until">Valable jusque</string>
+    <string name="enter_the_code">Saisissez le code Portefeuille</string>
+
+
+    <!--Wallet Activity-->
+    <string name="wallet_balance">Le montant de votre portefeuille est</string>
+
+
+    <!--Change Password-->
+    <string name="change_password_title">Changer le mot de passe</string>
+    <string name="current_password">Mot de passe actuel</string>
+    <string name="new_password">nouveau mot de passe</string>
+    <string name="confirm_password">Confirmer le nouveau mot de passe</string>
+    <string name="please_enter_current_pass">Veuillez saisir le mot de passe actuel</string>
+    <string name="please_enter_new_pass">Veuillez saisir un nouveau mot de passe</string>
+    <string name="please_enter_confirm_pass">Veuillez Saisir le mot de passe de confirmation</string>
+    <string name="different_passwords">Le mot de passe ne correspond pas</string>
+    <string name="commision">Commission</string>
+    <string name="request_cancel">Vous avez annulé la demande</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Photos</item>
+        <item>Movies</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="valid_image">No image found</string>
+    <string name="otp_validation">le champs OTP est obligatoire</string>
+    <string name="inncorrect_otp"> OTP incorrect</string>
+    <string name="confirm_password_validation">Non concordance des mots de passe</string>
+    <string name="reset_password">réinitialiser le mot de passe</string>
+    <string name="note">Note : Veuillez saisir le code OTP envoyé à votre adresse email</string>
+    <string name="secrete_code">Saisissez l’OTP</string>
+    <string name="connect_with_social_media">Ou connectez-vous via les réseaux sociaux</string>
+    <string name="logout_alert">Êtes-vous sûr de vouloir vous déconnecter?</string>
+    <string name="choose_social">Choisir un compte</string>
+    <string name="facebook_name">Facebook</string>
+    <string name="google_name">Google</string>
+    <string name="schdule_accept">Votre demande a été accepté  par un chauffeur</string>
+    <string name="no_comments">Aucun commentaire</string>
+    <string name="pin_location">Définir un emplacement</string>
+    <string name="type">Model</string>
+    <string name="emaergeny_call">Êtes-vous sûr de vouloir passer un appel d\'urgence?</string>
+    <string name="user_no_mobile">Aucun numéro de mobile</string>
+    <string name="profile">Profil</string>
+    <string name="reason_to_cancel">Raison de l\'annulation</string>
+    <string name="reason">Saisissez un message</string>
+
+    <!--Activity Help-->
+    <string name="help_msg">Nos assistant vont vous contacter très rapidement!</string>
+    <string name="help_title">&appName; Aide</string>
+    <string name="schedule_request">Programmer</string>
+    <string name="surge_pricing_title">En raison de la forte demande, le prix peut varier</string>
+    <string name="request_now">Ride now</string>
+    <string name="help">Help</string>
+    <string name="book_name">Booking ID</string>
+    <string name="password_size">Le mot de passe doit contenir au minimum 6 caractères</string>
+    <string name="sorry_for_inconvinent">Désolé, Nos assistants sont occupés en ce moment</string>
+    <string name="email_exist">The email has already been taken</string>
+    <string name="first_name_no_number">Veuillez utiliser des lettres uniquement</string>
+    <string name="last_name_no_number">Veuillez utiliser des lettres uniquement</string>
+    <string name="ok">Ok</string>
+    <string name="use_wallet_amount">Utiliser le solde du portefeuille</string>
+    <string name="arriving">&Provider; accepté votre demande.</string>
+    <string name="view_invoice">View receipt</string>
+    <string name="payment_set_as_card">Mode de paiement changé en carte</string>
+    <string name="payment_set_as_cash">Mode de paiement changé en argent</string>
+
+    <string name="new_login">Connexion</string>
+    <string name="new_register">S’inscrire pour register</string>
+
+</resources>
