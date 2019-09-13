@@ -41,6 +41,7 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Activities.CreateGig"></activity>
         <activity android:name=".Activities.ActivityAbout" />
 
         <meta-data
@@ -121,7 +122,7 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".Fragments.SoruceAndDestination"
+            android:name=".Fragments.SourceAndDestination"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"

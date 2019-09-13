@@ -195,7 +195,7 @@ public class CustomGooglePlacesSearch extends AppCompatActivity implements Googl
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // optimised way is to start searching for laction after user has typed minimum 3 chars
+                // optimised way is to start searching for location after user has typed minimum 3 chars
                 imgDestClose.setVisibility(View.VISIBLE);
                 strSelected = "destination";
                 if (txtDestination.getText().length() > 0) {

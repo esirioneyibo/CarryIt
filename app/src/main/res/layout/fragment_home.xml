@@ -1250,8 +1250,8 @@
                         android:layout_marginTop="@dimen/_10sdp"
                         android:alpha=".1"
                         android:scaleType="fitXY"
-                        app:srcCompat="@drawable/rect_shadow"
-                        android:visibility="gone" />
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/rect_shadow" />
 
                     <ImageView
                         android:id="@+id/imgSos"
@@ -1260,20 +1260,20 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        app:srcCompat="@drawable/sos"
-                        android:visibility="gone" />
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/sos" />
 
                     <ImageView
                         android:id="@+id/imgShareRide"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
                         android:layout_below="@+id/imgSos"
+                        android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginRight="@dimen/_10sdp"
                         android:layout_marginTop="@dimen/_5sdp"
-                        app:srcCompat="@drawable/share_ride"
-                        android:visibility="gone" />
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/share_ride" />
 
                     <ImageView
                         android:id="@+id/imgMenu"
@@ -1289,8 +1289,8 @@
                         android:layout_height="@dimen/_20sdp"
                         android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        app:srcCompat="@drawable/back_icon"
-                        android:visibility="gone" />
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/back_icon" />
 
                     <ImageView
                         android:id="@+id/mapfocus"
@@ -1298,8 +1298,8 @@
                         android:layout_height="@dimen/_40sdp"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="@dimen/_10sdp"
-                        app:srcCompat="@drawable/current_focus"
-                        android:visibility="invisible" />
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/current_focus" />
 
                     <RelativeLayout
                         android:id="@+id/lnrSearch"
@@ -1321,8 +1321,8 @@
                                 android:layout_height="@dimen/_55sdp"
                                 android:alpha=".40"
                                 android:scaleType="fitXY"
-                                app:srcCompat="@drawable/rect_shadow"
-                                android:visibility="visible" />
+                                android:visibility="visible"
+                                app:srcCompat="@drawable/rect_shadow" />
 
                             <LinearLayout
                                 android:id="@+id/destinationLayer"
@@ -1387,9 +1387,9 @@
                                     <View
                                         android:layout_width="1dp"
                                         android:layout_height="@dimen/_30sdp"
-                                        android:layout_marginBottom="@dimen/_1sdp"
                                         android:layout_marginLeft="@dimen/_12sdp"
                                         android:layout_marginTop="@dimen/_1sdp"
+                                        android:layout_marginBottom="@dimen/_1sdp"
                                         android:background="@color/light_gray" />
 
                                     <ImageView
@@ -1499,8 +1499,8 @@
                                 android:layout_below="@+id/centerImage"
                                 android:layout_centerHorizontal="true"
                                 android:layout_gravity="center"
-                                android:layout_marginBottom="@dimen/_10sdp"
                                 android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
                                 android:gravity="center"
                                 android:text="@string/looking_for_ride"
                                 android:textColor="@color/black_text_color"
@@ -1512,10 +1512,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentBottom="true"
-                                android:layout_marginBottom="@dimen/_20sdp"
                                 android:layout_marginLeft="@dimen/_20sdp"
-                                android:layout_marginRight="@dimen/_20sdp"
                                 android:layout_marginTop="@dimen/_20sdp"
+                                android:layout_marginRight="@dimen/_20sdp"
+                                android:layout_marginBottom="@dimen/_20sdp"
                                 android:background="@drawable/rounded_button"
                                 android:text="@string/cancel_ride"
                                 android:textColor="@color/button_text_color" />

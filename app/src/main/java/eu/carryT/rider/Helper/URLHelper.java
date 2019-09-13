@@ -7,14 +7,14 @@ public class URLHelper {
 
     public static final String base = "http://carry.bestwan.eu/";
     // http://45.32.71.202/
-//    public static final String base = "https://dev.tranxit.co/";
+//    public static final String base = "";
     public static final String REDIRECT_URL = base;
     public static final String REDIRECT_SHARE_URL = "http://maps.google.com/maps?q=loc:";
-    public static final String APP_URL = "https://play.google.com/store/apps/details?id=eu.bestwan.naijaelection2019";
+    public static final String APP_URL = "";
     public static final int client_id = 2;
-    public static final String client_secret = "WifS1rMi3LvuorP1G2UdtKZairUNSH2iMqrKivPf";
+    public static final String client_secret = "";
     // public static final String client_secret = "H4QdjRI5bQJv7E1oquIqVuLlshgcyS0xdsqInojs";
-    public static final String STRIPE_TOKEN = "pk_live_jPSCLtRMEHk9QEZQStgdCkyA";
+    public static final String STRIPE_TOKEN = "";
 
     public static final String login = base + "oauth/token";
     public static final String register = base + "api/user/signup";

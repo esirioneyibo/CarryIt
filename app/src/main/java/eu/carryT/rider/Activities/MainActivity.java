@@ -115,6 +115,8 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Home
     private static final int REQUEST_LOCATION = 1450;
     GoogleApiClient mGoogleApiClient;
 
+    public static final int NEW_GIG = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -726,5 +728,11 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Home
     @Override
     public void getJSONArrayResult(String strTag, JSONArray arrayResponse) {
 
+    }
+
+    public void create_gig(View view) {
+
+        Intent intent = new Intent(getApplicationContext(), CreateGig.class);
+        startActivityForResult(intent, NEW_GIG);
     }
 }

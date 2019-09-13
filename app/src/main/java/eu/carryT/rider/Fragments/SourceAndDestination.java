@@ -23,10 +23,10 @@ import eu.carryT.rider.Activities.MainActivity;
 import eu.carryT.rider.Constants.PlacesAutoCompleteAdapter;
 import eu.carryT.rider.Helper.SharedHelper;
 
-public class SoruceAndDestination extends AppCompatActivity {
+public class SourceAndDestination extends AppCompatActivity {
 
-    AppCompatActivity activity = SoruceAndDestination.this;
-    Context context = SoruceAndDestination.this;
+    AppCompatActivity activity = SourceAndDestination.this;
+    Context context = SourceAndDestination.this;
     String source_location = "", destination_location = "";
     Double latitude, longitude;
     AutoCompleteTextView source, destination;
@@ -50,7 +50,7 @@ public class SoruceAndDestination extends AppCompatActivity {
             }
         });
 
-        source.setAdapter(new PlacesAutoCompleteAdapter(SoruceAndDestination.this, R.layout.autocomplete_list_item));
+        source.setAdapter(new PlacesAutoCompleteAdapter(SourceAndDestination.this, R.layout.autocomplete_list_item));
 
 
 
@@ -65,7 +65,7 @@ public class SoruceAndDestination extends AppCompatActivity {
             }
         });
 
-        destination.setAdapter(new PlacesAutoCompleteAdapter(SoruceAndDestination.this, R.layout.autocomplete_list_item));
+        destination.setAdapter(new PlacesAutoCompleteAdapter(SourceAndDestination.this, R.layout.autocomplete_list_item));
         destination.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

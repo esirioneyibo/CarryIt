@@ -180,7 +180,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Locati
                 if (mapfocus.getVisibility() == View.VISIBLE){
                     mapfocus.setVisibility(View.INVISIBLE);
                 }
-                if (mMap.getCameraPosition().zoom < 16.0f){
+                if (mMap.getCameraPosition().zoom < 12.0f){
                     if (mapfocus.getVisibility() == View.INVISIBLE){
                         mapfocus.setVisibility(View.VISIBLE);
                     }
@@ -392,7 +392,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Locati
         reqStatus = SharedHelper.getKey(context, "req_status");
         if (reqStatus != null && !reqStatus.equalsIgnoreCase("null") && reqStatus.length() > 0) {
             if (reqStatus.equalsIgnoreCase("SEARCHING")) {
-                Toast.makeText(context, "You have already requested to a ride", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "You have already requested a ride", Toast.LENGTH_SHORT).show();
             }
         }
         return rootView;
@@ -1459,7 +1459,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Locati
 
                 // Show an explanation to the user *asynchronously* -- don't block
                 // this thread waiting for the user's response! After the user
-                // sees the explanation, try again to request the permission.
+                // sees the explanation, try again to
+
                 new AlertDialog.Builder(context)
                         .setTitle("Location Permission Needed")
                         .setMessage("This app needs the Location permission, please accept to use location functionality")
@@ -1477,7 +1478,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Locati
 
 
             } else {
-                // No explanation needed, we can request the permission.
+                // No explanation needed, we can  the permission.
                 ActivityCompat.requestPermissions(getActivity(),
                         new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                         1);
@@ -1611,7 +1612,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Locati
         builder.setTitle(context.getString(R.string.app_name))
                 .setIcon(R.mipmap.ic_launcher)
                 .setCancelable(false)
-                .setMessage("Tranxit needs the location permission, Please accept to use location functionality")
+                .setMessage("CarryT needs the location permission, Please accept to use location functionality")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -2549,7 +2550,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Locati
 
     private String getDirectionsUrl(LatLng sourceLatLng, LatLng destLatLng) {
 
-        // Origin of routelng;
+        // Origin of routeing;
         String str_origin = "origin=" + source_lat + "," + source_lng;
         String str_dest = "destination=" + dest_lat + "," + dest_lng;
         // Sensor enabled

@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sky_blue"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/gig_information_label"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_columnWeight=".9"
+                    android:onClick="Gig_InfoClick"
+                    android:visibility="gone"
+                    android:text="@string/gig_information"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+                <TextView
+                    android:id="@+id/gig_information_label_noclick"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_columnWeight=".9"
+                    android:text="@string/gig_information"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+
+                <ImageView
+                    android:id="@+id/gig_information_label_tick"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight=".1"
+                    android:visibility="gone"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_baseline_done_24px" />
+            </GridLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_container1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/image_containar"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:onClick="upLoadImage"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"
+                            android:src="@android:drawable/ic_menu_camera"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="@string/gig_name"/>
+                            <EditText
+                                android:id="@+id/gig_name_input"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginStart="5dp"
+                                android:inputType="text"
+                                android:textColorHint="@color/red"
+                                android:hint="@string/gig_name_hint"/>
+                            <EditText
+                                android:id="@+id/item_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:inputType="text"
+                                android:textColorHint="@color/red"
+                                android:hint="@string/item_value"/>
+                        </LinearLayout>
+                    </GridLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/gig_size"/>
+
+                    <RadioGroup
+                        android:id="@+id/cagro_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/small"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".16" />
+
+                        <RadioButton
+                            android:id="@+id/medium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight=".16" />
+
+                        <RadioButton
+                            android:id="@+id/large"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight=".16" />
+
+                        <RadioButton
+                            android:id="@+id/xlarge"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight=".16" />
+
+                        <RadioButton
+                            android:id="@+id/huge"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight=".16" />
+
+                        <RadioButton
+                            android:id="@+id/pet"
+                            android:layout_width="0dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".16" />
+
+                    </RadioGroup>
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight=".16"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_keys" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight=".16"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_chair" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight=".16"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_single_bed" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight=".16"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_bike" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight=".16"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_triple_seat_sofa" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight=".16"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_footstep" />
+
+                    </GridLayout>
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="Small"
+                            android:textAlignment="center"
+                            android:layout_columnWeight=".16"/>
+
+                        <TextView
+                            android:text="Medium"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_columnWeight=".16"/>
+
+                        <TextView
+                            android:text="Large"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight=".16"/>
+
+                        <TextView
+                            android:text="X-Large"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight=".16"/>
+
+                        <TextView
+                            android:text="Huge"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight=".16"/>
+
+                        <TextView
+                            android:text="Pet"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight=".16"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight=".16"/>
+
+                    </GridLayout>
+                    <TextView
+                        android:id="@+id/hint_size"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/pickup_location_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_columnWeight=".9"
+                    android:onClick="pickUpLocationClick"
+                    android:text="@string/pickup_location"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+                <TextView
+                    android:id="@+id/pickup_location_label1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_columnWeight=".9"
+                    android:visibility="gone"
+                    android:text="@string/pickup_location"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+
+                <ImageView
+                    android:id="@+id/pickup_from_location_tick"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight=".1"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_baseline_done_24px" />
+            </GridLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_container2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/pickup_q1"/>
+                    <RadioGroup
+                        android:id="@+id/personmeet_at_loaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+                        <RadioButton
+                            android:id="@+id/i_will"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/i_will"/>
+                        <RadioButton
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/some_one_else"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/someone_else"/>
+                        <RadioButton
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/pickup_from_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pick_up_from_location"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/pickup_q2"/>
+                    <RadioGroup
+                        android:id="@+id/earliest_pickup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+                        <RadioButton
+                            android:id="@+id/asap_pickup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/asap_pickup_text"/>
+                        <RadioButton
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/specific_pickup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/after_pickup_text"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/delivery_location_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_columnWeight=".9"
+                    android:visibility="gone"
+                    android:onClick="deliveryLocationClick"
+                    android:text="@string/delivery_location"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+                <TextView
+                    android:id="@+id/delivery_location_label1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_columnWeight=".9"
+                    android:text="@string/delivery_location"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+
+                <ImageView
+                    android:id="@+id/delivery_tick"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight=".1"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_baseline_done_24px" />
+            </GridLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_container3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/ic_menu_camera"/>
+                        <EditText
+                            android:id="@+id/delivery_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="10dp"
+                            android:inputType="text"
+                            android:hint="@string/hint_del_location"
+                            android:layout_marginEnd="10dp"/>
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/optional_delivery_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="40dp"
+                        android:inputType="text"
+                        android:hint="@string/building_etc"
+                        android:layout_marginEnd="20dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:text="@string/delivery_q1"/>
+                    <RadioGroup
+                        android:id="@+id/reciving_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/someone_else"/>
+                        <RadioButton
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/i_will"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:text="@string/delivery_q2"/>
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/signature_check"
+                        android:text="@string/required_a_signature"
+                        />
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/delivery_deadline_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_columnWeight=".9"
+                    android:onClick="deliveryDeadLineClick"
+                    android:text="@string/delivery_deadline"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+                <TextView
+                    android:id="@+id/delivery_deadline_label1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_columnWeight=".9"
+                    android:text="@string/delivery_deadline"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+
+                <ImageView
+                    android:id="@+id/delivery_dealine_tick"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight=".1"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_baseline_done_24px" />
+            </GridLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_container4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/deadline_text"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/deliver_before"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/input_time"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="30dp"
+                        android:inputType="time"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="30dp"
+                        android:text="@string/deadline_note"/>
+
+                    <CalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="30dp"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/additional_details_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_columnWeight=".9"
+                    android:onClick="additionalDetailClick"
+                    android:visibility="gone"
+                    android:text="@string/additional_details"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+                <TextView
+                    android:id="@+id/additional_details_label1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_columnWeight=".9"
+                    android:text="@string/additional_details"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+
+                <ImageView
+                    android:id="@+id/additional_tick"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight=".1"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_baseline_done_24px" />
+            </GridLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_container5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/additional_q1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/additional_note"/>
+                    <EditText
+                        android:id="@+id/additional_details_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="10dp"
+                        android:inputType="text"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/additional_q2"/>
+                    <RadioGroup
+                        android:id="@+id/additional_note_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp">
+                        <RadioButton
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/no_additional_expense"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no_additional_expenses"/>
+                        <RadioButton
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/yes_additional_expense"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/additional_expenses"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/insuranceLabel"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_columnWeight=".9"
+                    android:onClick="insuranceClick"
+                    android:text="@string/insurance"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+                <TextView
+                    android:id="@+id/insuranceLabel1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_columnWeight=".9"
+                    android:text="@string/insurance"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+
+                <ImageView
+                    android:id="@+id/insurance_tick"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight=".1"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_baseline_done_24px" />
+            </GridLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_container6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:text="@string/insurance_note"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginEnd="80dp"
+                            android:text="@string/relax_note"/>
+                    </LinearLayout>
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_columnWeight=".5"
+                            android:text="@string/road_trip"/>
+                        <Button
+                            android:layout_columnWeight=".5"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:onClick="postThisGig"
+                            android:background="@color/green"
+                            android:text="@string/post_this_gig"/>
+                    </GridLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

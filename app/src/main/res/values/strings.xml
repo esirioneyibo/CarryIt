@@ -4,7 +4,7 @@
     <string name="app_name">&appName;</string>
     <!--Google map-->
     <!--<string name="google_map_api">AIzaSyDSNO6kfM3L3o2x0fkM-6jTXjI2iFKOfAY</string>-->
-    <string name="google_map_api">AIzaSyD0L8WU-A7WYNjXefNbhV8OcSahd2P4Vho</string>
+    <string name="google_map_api">AIzaSyDSNO6kfM3L3o2x0fkM-6jTXjI2iFKOfAY</string>
 
     <!--Facebook App Id Account Kit -->
     <string name="facebook_app_id">668083590290820</string>
@@ -285,8 +285,52 @@
     <!--ABOUT STRIGNS-->
     <string name="about_first_header">Carry\'T Services</string>
     <string name="about_second_header">Contact</string>
-    <string name="about_phone_number">+358456726453</string>
-    <string name="about_mail">info@bestwan.eu</string>
-    <string name="about_address">Naakanrinne 8,37600, Valkeakoski, Finland</string>
+    <string name="about_phone_number">089458767</string>
+    <string name="about_mail">info@ourservices.com</string>
+    <string name="about_address">Random address</string>
+
+    <!--GIG FORM-->
+
+    <string name="gig_name">Gig Name</string>
+    <string name="gig_name_hint">Enter the Gig name here</string>
+    <string name="item_value">Item Value</string>
+    <string name="gig_size">How big is your Gig?</string>
+    <string name="pickup_q1">Who will meet the driver at pickup location?</string>
+    <string name="i_will">I will</string>
+    <string name="someone_else">Someone Else</string>
+    <string name="pick_up_from_location">Pick Up from Location</string>
+    <string name="pickup_q2">When is the earliest driver can arrive to pickup?</string>
+    <string name="asap_pickup_text">PickUp As Soon As Possible</string>
+    <string name="after_pickup_text">PickUp After Specified Time</string>
+    <string name="hint_del_location">Enter Delivery Location</string>
+    <string name="delivery_q1">Who is receiving the delivery?</string>
+    <string name="delivery_q2">Do you want to require that someone is present to accept the delivery?</string>
+    <string name="required_a_signature">Required a Signature</string>
+    <string name="building_etc">Building ETC</string>
+    <string name="deadline_text">When is the deadline for delivery?</string>
+    <string name="deliver_before">Deliver before</string>
+    <string name="deadline_note">This is a typical deadline for Gigs like yours. If you would like to request the earlier delivery. You may change the deadline.</string>
+    <string name="additional_q1">What else does driver need to know?</string>
+    <string name="additional_note">Description of item, Special instructions, dimensions ,weight loading and unloading details etc.</string>
+    <string name="additional_q2">Are there any additional expenses involved in this Gig that you\'d like to cover? These expenses may include parking fees,tolls,extra hassle etc.</string>
+    <string name="no_additional_expenses">No Additional Expenses</string>
+    <string name="additional_expenses">Yes There will be additional expenses.</string>
+    <string name="insurance_note">Roadie Inc, provides upto $500 protection on every Gig. Coverage up to $10,000 is available for Gigs valued over $500.</string>
+    <string name="relax_note">Relax, your Gig is fully protected!</string>
+    <string name="road_trip">Your stuff is about to take a road trip!</string>
+    <string name="post_this_gig">Post This Gig</string>
+    <string name="get_an_estimate">Get an Estimate</string>
+    <string name="create_a_gig">Create a Gig</string>
+    <string name="current_gigs">Current Gigs</string>
+    <string name="achieved_gigs">Achieved Gigs</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="gig_information">GIG INFORMATION</string>
+    <string name="pickup_location">PICKUP LOCATION</string>
+    <string name="delivery_location">DELIVERY LOCATION</string>
+    <string name="delivery_deadline">DELIVERY DEADLINE</string>
+    <string name="additional_details">ADDITIONAL DETAILS</string>
+    <string name="insurance">INSURANCE</string>
+
 
 </resources>
